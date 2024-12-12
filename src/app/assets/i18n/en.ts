@@ -1,5 +1,4 @@
 export const en = {
-    "HELLO": "Hello",
-    'Choose Language': "English",
-    'mk': 'nene'
+    'Are you tradesman' : 'Are you tradesman ?',
+    'Do you need a tradesman': 'Do you need a tradesman ?'
 }
