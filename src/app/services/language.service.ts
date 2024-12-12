@@ -8,6 +8,7 @@ export class LanguageService {
 
   currentLanguage: 'en' | 'mk' = 'en';
 
+
   constructor(private translate: TranslateService){ 
     this.translate.setDefaultLang(this.currentLanguage); 
     this.translate.use(this.currentLanguage); 
@@ -21,4 +22,5 @@ export class LanguageService {
     this.currentLanguage = lang;
     this.translate.use(lang);
   }
+
 }
