@@ -42,6 +42,8 @@ export class RegisterComponent {
       this.registerForm = this.formBuilder.group({
         email: ['', Validators.required],
         contactEmail: ['', Validators.required],
+        first_name: ['', Validators.required],
+        last_name: ['', Validators.required],
         password: ['', Validators.required],
         phone: ['', Validators.required],
         option: ['', Validators.required],

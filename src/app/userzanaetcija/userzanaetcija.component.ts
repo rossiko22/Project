@@ -20,8 +20,6 @@ export class UserzanaetcijaComponent {
 
   chooseService(tradesman: boolean): void{
     this.tradesmanService.setCurrentTradesmanStatus(tradesman);
-    this.router.navigate(['/menu']);
-    console.log(this.tradesmanService.getCurrentTradesmanStatus());
-    
+    this.router.navigate(['/menu']);    
   }
 }

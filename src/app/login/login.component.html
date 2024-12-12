@@ -1,23 +1,20 @@
-
-
-<div class="outerdiv">
-    <div class="container">
-        <input type="checkbox" id="check">
-        <div class="login form">
-          <header>Login</header>
-          <form [formGroup]="loginForm" (ngSubmit)="checkLogin()">
-            <input type="text" placeholder="Enter your email" formControlName="email">
-            <input type="password" placeholder="Enter your password" formControlName="password">
-            <a href="#">Forgot password?</a>
-            <input type="submit" class="button">
-          </form>
-          <div class="signup">
-             <p>
-              {{loginForm.value.password}}
-              {{loginForm.value.email}}
-             </p>
-             <p style="color:red" *ngIf="error">Error</p>
-          </div>
-    </div>
-</div>
-
+  <div class="outerdiv">
+      <div class="container">
+          <input type="checkbox" id="check">
+          <div class="login form">
+            <header>Login</header>
+            <form [formGroup]="loginForm" (ngSubmit)="checkLogin()">
+              <input type="text" placeholder="Enter your email" formControlName="email">
+              <input type="password" placeholder="Enter your password" formControlName="password">
+              <a href="#">Forgot password?</a>
+              <input type="submit" class="button">
+            </form>
+            <div class="signup">
+              <p>
+                {{loginForm.value.password}}
+                {{loginForm.value.email}}
+              </p>
+              <p style="color:red" *ngIf="error">Error</p>
+            </div>
+      </div>
+  </div>
